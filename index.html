@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gluten&family=Russo+One&display=swap" rel="stylesheet">
+    <script src="js/scrollreveal.js"></script>
+    <script src="https://kit.fontawesome.com/9b95a5c077.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Paytone+One&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Archivo+Black&family=Candal&family=Fira+Sans+Extra+Condensed:wght@300&family=Fredoka+One&family=Lilita+One&family=Mitr:wght@300&family=Niconne&family=Oleo+Script+Swash+Caps:wght@700&family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Lilita+One&family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <script type='text/javascript'>
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+
+    $('a[href^="#"]').click(function() {
+    var destino = $(this.hash);
+    if (destino.length == 0) {
+      destino = $('a[name="' + this.hash.substr(1) + '"]');
+    }
+    if (destino.length == 0) {
+      destino = $('html');
+    }
+    $('html, body').animate({ scrollTop: destino.offset().top }, 500);
+    return false;
+  });
+
+ $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+   
+});
+
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+	<title>Acostrip </title>
+	<link rel="shortcut icon" href="img/"/>
+</head><!--<body>
+    <div class="row justify-content-center">
+    <h1 class='desactivado col-11 text-center' ><li class='mr-1 far fa-times-circle'></li>DESACTIVADO TEMPORALMENTE<li class='ml-1 far fa-tired'></li>
+        </h1> 
+    </div></body>-->
+ 
+<body style="background-size: cover; background-image: url(img/fono.jpg); position: relative; background-repeat: repeat;">
+    <img class="imagen text-center" src="img/15.png" > 
+<div class="" style="">
+<div class="wrp">
+        
+           
+        <div class="contenido">
+            <div class="info">
+                <img class="imagen3 col-9 col-md-5 mt-4" src="img/LOGOACOSTRIP.png" > 
+                <div class="row justify-content-center" style="margin:0 auto">
+                 <h1 class='nuestraBoda col-12 col-md-6 text-center'>¿Por qué viajar con Acostrip? </h1>
+                <h1 class="nombres1 col-12 mt-3 col-md-7 ">Somos una Agencia de Viajes con cuatro años de experiencia, que cuenta con una gran variedad de destinos nacionales e internacionales.<br>Contamos con pagos seguros, atención personalizada y precios accesibles.</h1>
+            </div>
+                
+            </div>
+        </div>
+        
+</div>
+   </div>
+<br><br>
+
+<div class="container" style="">
+    <div class="row justify-content-center" style="margin: 0 auto;">
+      
+        <div class="col-12 mt-4">
+            <h1 class="titulo text-left">Circuitos</h1>
+           <h1 class="titulo4 text-left">internacionales</h1>
+        </div>
+       
+
+       <div class="col-12 mt-4" style="background-size: cover; background-image: url(img/17.jpeg); position: relative; background-repeat: repeat;">
+            <br><br>
+            <div class="destinos col-9" style="margin:0 auto">
+                <br><br>
+                <!--<h1 class="subtitulo text-center "><b>Destinos</b></h1>
+                    <h1 class="subtitulo2 text-center ">Nacionales:</h1>-->
+                    <h1 class="texto text-center mt-4">Descubre el emocionante mundo de los circuitos internacionales con Acostrip, vive los paquetes personalizados que incluyen boletos para eventos, alojamiento de primera clase y experiencias exclusivas, ¡prepárate para vivir una aventura inolvidable en los circuitos internacionales con nosotros!</h1>
+                   
+                                    <br><br>      
+            </div>
+            <br><br>
+        </div>
+                   <!-- <h1 class="subtitulo3 col-12 text-center mt-4"><b>Beneficios</b></h1>-->
+
+                   <!-- <h1 class="subtitulo3 text-center col-12 mt-4"><b>Además...</b></h1>
+                    <h1 class="texto text-center mt-2">Disney ofrece diferentes parques temáticos como:</h1>
+                    <h1 class="texto text-center col-12">Magic Kingdom</h1>
+                    <h1 class="texto text-center col-12">Epcot</h1>
+                    <h1 class="texto text-center">Disney's Hollywood Studios</h1>
+                    <h1 class="texto text-center ">Animal Kingdom</h1>-->
+    </div>
+</div>
+<br>
+
+<div class="container mt-4" style="background-size: cover; background-image: url(img/20.jpeg); position: relative; background-repeat: repeat;">
+    <div class="row justify-content-center" style="margin: 0 auto;">
+        <div class="col-12">
+           <!-- <h1 class="titulo text-center mt-5 text-white"><b>XV'S</b></h1>-->
+           <br><br><br>
+           <h1 class="titulo2 text-left">Crucero</h1>
+       </div>
+       <div class="col-9" style="margin:0 auto">
+                <br><br>
+                   <!-- <h1 class="subtitulo text-center text-white"><b>Destinos</b></h1>-->
+                    <h1 class="texto3 text-center text-white mt-4">¡Zarpa hacia la aventura con nuestros cruceros de ensueño! Déjate llevar por las aguas turquesas del  Caribe, explora los encantos históricos del Mediterráneo o descubre la exótica belleza de Asia. Con Acostrip, cada momento a bordo es una experiencia inolvidable: desde cenas gourmet hasta entretenimiento de clase mundial y actividades emocionantes para toda la familia.  ¡Reserva ahora y embárcate en la escapada perfecta!</h1>
+                
+                                    <br><br>      
+            </div>
+       
+    </div>
+
+</div>
+<div class="container" style="margin-top:80px; margin: 0 auto;">
+    <div class="row justify-content-center" style="margin: 0 auto;">
+      <!--  <h1 class="subtitulo3 text-center col-12 mt-4"><b>Desde..</b></h1>
+                    <h1 class="texto2 text-center mt-2 col-12">La majestuosidad de París con la Torre Eiffel y el Louvre, hasta la encantadora Venecia con sus románticos canales, pasando por la animada Barcelona con su arquitectura modernista, un viaje por Europa te permitirá sumergirte en diferentes culturas, idiomas y tradiciones.
+
+                    </h1>-->
+        <div class="col-11 mt-5">
+            <h1 class="titulo text-left">Playas de</h1>
+           <h1 class="titulo4 text-left">México</h1>
+        </div>
+       
+
+       <div class="col-12 mt-4" style="background-size: cover; background-image: url(img/19.jpeg); position: relative; background-repeat: repeat;">
+            <br><br>
+            <div class="destinos col-9" style="margin:0 auto">
+                <br><br>
+              
+                    <h1 class="texto text-center mt-4">¡Sumérgete en el paraíso con nuestras increíbles escapadas a las playas de México! Desde las impresionantes costas de Cancún hasta los pintorescos pueblos de la Riviera Maya. Relájate en las cálidas aguas del Caribe, explora los vibrantes arrecifes de coral o simplemente disfruta del sol en una hamaca frente al mar. Acostrip planifica tu escapada y sin complicaciones. ¡Reserva ahora y prepárate para unas vacaciones inolvidables bajo el cálido sol mexicano!</h1>
+                    
+                                    <br><br>      
+            </div>
+            <br><br>
+        </div>
+                   <!-- <h1 class="subtitulo3 text-center col-12 mt-4"><b>Además...</b></h1>
+                    <h1 class="texto2 text-center mt-2 col-12 mb-4">Viajar al extranjero puede ayudarte a desarrollar habilidades como la adaptabilidad, la resolución de problemas, la comunicación intercultural y la independencia. Te brinda la oportunidad de desconectar de la rutina diaria, relajarte y revitalizarte mientras exploras lugares fascinantes.
+                    </h1>-->
+                   
+    </div>
+</div>
+
+<div class="container mt-5" style="background-size: cover; background-image: url(img/23.jpeg); position: relative; background-repeat: repeat;">
+    <div class="row justify-content-center" style="margin: 0 auto;">
+        <div class="col-12"><br><br>
+            <div class="row justify-content-center" style="margin:0 auto">
+           <h1 class="titulo3 text-center col-md-6 mb-4">CONTÁCTANOS</h1>
+       </div>
+       </div>
+       <div id="social-test" class="col-12">
+            <div class="social"> 
+                <a href="tel:6182217998"><i class="fa fa-phone-square-alt" aria-hidden="true"></i></a>
+                <h1 class="texto4 text-center text-white  mb-4">618 221 79 98
+                    </h1>
+            </div>
+        </div>
+
+         <div id="social-test" class="col-12">
+            <div class="social"> 
+                <a href="https://acostrip.com.mx/"><i class="fab fa-chrome" aria-hidden="true"></i></a>
+                <h1 class="texto4 text-center  mb-4 text-white">www.acostrip.com.mx
+                    </h1>
+            </div>
+        </div>
+
+         <div id="social-test" class="col-12">
+            <div class="social"> 
+                 <a href="https://www.facebook.com/share/zWYNjjyw3eV38WTj/?mibextid=qi2Omg"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <h1 class="texto4 text-center  mb-4 text-white">Agencia de viajes Acostrip
+                    </h1>
+            </div>
+        </div>
+
+        <div id="social-test" class="col-12">
+            <div class="social"> 
+                  <a href=https://www.instagram.com/acostrip?igsh=MTN2eGJ0b2x5NWplMw==><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <h1 class="texto4 text-center  mb-4 text-white">@acostrip
+                    </h1>
+            </div>
+        </div>
+         <div id="social-test" class="col-12">
+            <div class="social"> 
+                  <a href="https://maps.app.goo.gl/52V9owrMqediBCfe6"><i class="fa fa-map-marker-alt " aria-hidden="true"></i></a>
+                <h1 class="texto4 text-center  mb-4 text-white">Francisca Escárzaga #322 Col. del Maestro.
+                    </h1>
+            </div>
+        </div>
+ 
+ 
+
+</div>
+<br>
+    </div>
+
+</div>
+
+
+<div class="container col-12 mt-5" >
+    <div class="row justify-content-center " style="margin: 0 auto;">
+        <div class="col-12">
+           <h1 class="subtitulo3 text-center ml-0 text-dark mt-4 mb-4">Colaboradores</h1>
+       </div>
+       
+       <div class="col-6 col-md-3">
+       <center><img class="imagen3 mt-" src="img/logo1.jpg" > </center>
+       </div>
+       <div class="col-6 col-md-3" >
+         <center><img class="imagen3 mt-4" src="img/logo3.jpg" > </center>
+       </div>
+       <div class="col-6 col-md-3 align-items-center">
+        <center><img class="imagen3  mt-5" src="img/logo2.jpeg" > </center>
+       </div>
+       <div class="col-6 col-md-3" >
+        <center><img class="imagen3 mt-4" src="img/logo4.jpg" ></center>  
+       </div>
+       
+      
+           
+           
+           
+           
+       
+       
+ 
+ 
+
+</div>
+
+    </div>
+
+<div class="container col-12 mt-5" >
+    <div class="row justify-content-center align-items-center" style="margin: 0 auto;">
+        <div class="col-12">
+           <h1 class="subtitulo3 text-center ml-0 text-dark mt-4 mb-4">Nuestros Clientes</h1>
+       </div>
+       
+       <div class="col-6 col-md-3">
+       <center><img class="imagen3 mt-" src="img/8.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow"> </center>
+       </div>
+       <div class="col-6 col-md-3" >
+         <center><img class="imagen3 mt-" src="img/9.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow"> </center>
+       </div>
+       <div class="col-6 col-md-3" >
+        <center><img class="imagen3 mt-2" src="img/12.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow"></center>  
+       </div>
+       <div class="col-6 col-md-3">
+        <center><img class="imagen3  mt-2" src="img/11.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow"> </center>
+       </div>
+       <div class="col-6 col-md-3">
+        <center><img class="imagen3  mt-2" src="img/10.jpeg" onclick="openModal();currentSlide(5)" class="hover-shadow"> </center>
+       </div>
+       <div class="col-6 col-md-3">
+        <center><img class="imagen3  mt-2" src="img/13.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow"> </center>
+       </div>
+       <div class="col-6 col-md-3">
+        <center><img class="imagen3  mt-2" src="img/14.jpeg" onclick="openModal();currentSlide(7)" class="hover-shadow"> </center>
+       </div>
+           
+           
+    <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 7</div>
+      <img src="img/8.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 7</div>
+      <img src="img/9.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 7</div>
+      <img src="img/10.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 7</div>
+      <img src="img/11.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 7</div>
+      <img src="img/12.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 7</div>
+      <img src="img/13.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 7</div>
+      <img src="img/14.jpeg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" style="color:white; opacity:.8;" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" style="color:white; opacity:.8;" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    
+  </div>
+</div>       
+           
+       
+       
+ 
+ 
+
+</div>
+<br><br><br>
+    </div>
+
+
+     
+        
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+</a> 
+
+	
+<div class="row justify-content-center" style="background-color: white">
+                  
+                <img class="col-6 col-md-3 mb-3 mt-4" src="img/logotipoConCodigo.png">  
+        </div>  
+   
+	<!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</body>
+</html>
