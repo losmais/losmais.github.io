@@ -275,6 +275,34 @@ letter-spacing: 2px;
   font-size: 18px;
 
 }
+.numeroTarjeta{
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: -10px;
+  color:#fff;
+  letter-spacing: 2px;
+  font-size: 18px;
+
+}
+.nombreTarjeta{
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color:#fff;
+  letter-spacing: 0px;
+  font-size: 16px;
+
+}
+.nombreTarjetabbva{
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color:#fff;
+  letter-spacing: 0px;
+  font-size: 16px;
+
+}
 .subtitulo{
     
   font-family: "Alumni Sans Pinstripe", sans-serif;
@@ -366,7 +394,24 @@ border-radius: 20px;
   background-repeat: repeat;
   border-radius: 30px;
   box-shadow: 10px 25px 25px rgba(0,0,0,0.5);
+  z-index: 99999;
 }
+.tarjetaNU{
+  height: 170px;
+  background-color: #820AD1;
+  border-radius: 30px;
+  box-shadow: 10px 25px 25px rgba(0,0,0,0.5);
+}
+.tarjetaBBVA{
+  height: 170px;
+  background-color: #01B7C7;
+  border-radius: 30px;
+  box-shadow: 10px 25px 25px rgba(0,0,0,0.5);
+}
+.izquierda{
+  float: right;
+}
+
 .carousel img{
   border-top-right-radius: 30px 30px;
 border-bottom-left-radius: 30px 30px;
@@ -824,8 +869,18 @@ border-bottom-left-radius: 50px 50px;
 }
 .colaboradores img{
     border-radius: 50%;
+    display: block;
+
 
   }
+
+  .colaboradores img:hover {
+    -webkit-transform:scale(1.25);
+-moz-transform:scale(1.25);
+-ms-transform:scale(1.25);
+-o-transform:scale(1.25);
+transform:scale(1.25);
+}
 
   @media (min-width: 800px) { /*laptop*/
   .iniciales{
@@ -842,4 +897,38 @@ border-bottom-left-radius: 50px 50px;
 border-bottom-left-radius: 50px 50px;
 
 }
+}
+
+.btnWhats{
+  text-decoration:none;
+  color:#fff;
+  background-color: #10213F;
+  border-top: 3px solid ;
+  border-bottom: 3px solid ;
+  border-right: 3px solid ;
+  border-left: 3px solid ;
+  border-color: #fff;
+  height: 45px;
+  font-size: 15px;
+  font-weight: bold;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+    font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+
+.btnWhats:hover{
+  text-decoration:none;
+  background-color: #fff;
+  color: #10213F;
+  border-top: 3px solid ;
+  border-bottom: 3px solid ;
+  border-right: 3px solid ;
+  border-left: 3px solid ;
+  border-color: #10213F;
+ 
 }
