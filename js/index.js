@@ -226,6 +226,39 @@ sr.reveal('.social', {
 		
 
 	});
+
+sr.reveal('.tarjetaNU', {
+		rotate: {
+        x: 0,
+        z: 50
+    },
+		duration: 2500, //tiempo
+		delay:500,
+		origin: 'top', //origen
+		distance: '50px' //distancia
+
+
+	});
+sr.reveal('.tarjetaBBVA', {
+		rotate: {
+        x: 0,
+        z: 50
+    },
+		duration: 2500, //tiempo
+		delay:500,
+		origin: 'top', //origen
+		distance: '50px' //distancia
+
+
+	});
+sr.reveal('.btnWhats', {
+		duration: 2500, //tiempo
+		delay:1500,
+		origin: 'bottom', //origen
+		distance: '100px', //distancia
+		
+
+	});
 // Open the Modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
